@@ -4,7 +4,6 @@ import os
 import smtplib
 from email.message import EmailMessage
 
-
 PASSWORD = os.getenv("webcam_email")
 SENDER = "emry390@gmail.com"
 RECEIVER = "emry390@gmail.com"
@@ -33,4 +32,5 @@ def send_email(img_path):
     gmail.quit()
 
 if __name__ == "__main__":
-    send_email()
+    send_email("images/352.png")
+
